@@ -33,6 +33,7 @@ services:
     environment:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
+      
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
   selenium-hub:
