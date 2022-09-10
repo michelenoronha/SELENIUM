@@ -33,6 +33,20 @@ services:
     environment:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
+      package dev.selenium.hello;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class HelloSelenium {
+    public static void main(String[] args) {
+        WebDriver driver = new ChromeDriver();
+
+        driver.get("https://selenium.dev");
+
+        driver.quit();
+    }
+}
       
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
